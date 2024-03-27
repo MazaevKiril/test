@@ -1,0 +1,129 @@
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+
+  .button_group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+
+  .app_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+
+  main {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+
+    .note_list {
+      margin: 20px 0;
+
+      .note {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        .note_content{
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .note_button_group {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+
+          button {
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: #dc3545;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #bd2130;
+            }
+          }
+        }
+
+        .note_date {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
